@@ -14,8 +14,7 @@ class SalesRoutes {
         this.router.get('/', salesController.list);
         this.router.get('/:id', salesController.getOne);
         this.router.post('/', salesController.create);
-        this.router.put('/:id', salesController.update);
-        this.router.delete('/:id', salesController.delete);
+        this.router.put('/', salesController.update);
     }
 
 }
